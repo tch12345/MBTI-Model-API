@@ -14,18 +14,19 @@ This is a backend-only **FastAPI-based MBTI personality prediction system**, bui
 
 ## 📁 File Structure
 
-📦 mbti-api
-├── app.py # Main FastAPI server with endpoints
-├── mainfunction/ # Core NLP and feature extraction pipeline
-│ ├── step_0.py # File validation & saving
-│ ├── step_1.py # WhatsApp parsing
-│ ├── step_2.py # Chat cleaning
-│ ├── step_3.py # Feature extraction
-│ ├── step_4.py # Individual user output
-│ ├── step_5.py # TF-IDF keyword extraction
-│ └── model.py # Pre-trained MBTI prediction model
-├── model/ # Contains .joblib trained model files
-└── README.md # This file
+```plaintext
+mbti-api/
+├── app.py                  # Main FastAPI server with all endpoints
+├── mainfunction/           # Core NLP pipeline and feature extraction
+│   ├── step_0.py           # Step 0: File validation & saving
+│   ├── step_1.py           # Step 1: WhatsApp chat parsing
+│   ├── step_2.py           # Step 2: Clean chat messages
+│   ├── step_3.py           # Step 3: Extract linguistic features
+│   ├── step_4.py           # Step 4: Generate per-user outputs
+│   ├── step_5.py           # Step 5: TF-IDF keyword extraction
+│   └── model.py            # MBTI prediction function using pre-trained model
+├── model/                  # Folder for `.joblib` pre-trained model files
+└── README.md               # Project documentation
 
 
 ---
