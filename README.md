@@ -26,11 +26,8 @@ mbti-api/
 │   ├── step_5.py           # Step 5: TF-IDF keyword extraction
 │   └── model.py            # MBTI prediction function using pre-trained model
 ├── model/                  # Folder for `.joblib` pre-trained model files
-└── README.md               # Project documentation
-
-
+├── README.md               # Project documentation
 ---
-
 ## 🛠️ API Endpoints
 
 ### 1. `POST /checkFile`
